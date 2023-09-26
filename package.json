@@ -1,0 +1,23 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "This App keeps you to track your tasks and get it done with in the deadline which increase your productivity ",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev" : "nodemon backend/index.js"
+  },
+  "author": "Liban Hassan",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
