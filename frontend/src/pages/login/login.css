@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    max-height: 100vh;
+}
+.title {
+    color: #1B07FF;
+    padding: 1rem;
+    margin: 0;
+}
+.container {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1B07FF;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 80%;
+    max-width: 600px;
+    height: 50vh;
+    margin:3rem auto ;
+    text-align: center;
+}
+
+h3 {
+    margin-block: .05rem;
+    font-size: 2rem;
+}
+
+.form {
+   
+    padding-block: 2rem;
+}
+.form-control {
+    margin-block: 1rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form-control > input {
+    border-radius: 10px;
+    line-height: 3;
+    width: 90%;
+    text-indent: 1rem;
+    border: none;
+    padding: 0;
+    color: #1B07FF;
+    font-size: 1rem;
+}
+
+.form-control > input:hover,
+.form-control > input:focus {
+    background-color: white;
+    outline: none;
+}
+
+.icon {
+    color: #1B07FF;
+    border-right: 1px solid gray;
+    padding: 0 .25rem;
+    scale: 150%;
+}
+
+.signin-btn {
+    padding: 1rem;
+    color: #1B07FF;
+    background-color: whitesmoke;
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    text-shadow: #070056;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1rem;
+}
+.signin-btn:hover {
+    background-color: white;
+}
+a {
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+}

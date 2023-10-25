@@ -18,7 +18,7 @@ const register = async (req, res) => {
         // check if email exits
 
         if (await User.findOne({ email })) {
-            res.status(404).json({ msg: 'Email already exists' })
+            res.status(400).json({ msg: 'Email already exists' })
         }
 
         const salt = await bcrypt.genSalt(10)
@@ -68,12 +68,12 @@ const login = async (req, res) => {
             }
             else {
 
-                return res.send("incorrect incredentials 1")
+                return res.status(401).send("incorrect incredentials 1")
             }
 
         }
         else {
-            return res.send("incorrect incredentials")
+            return res.status(401).send("incorrect incredentials")
         }
     }
 
